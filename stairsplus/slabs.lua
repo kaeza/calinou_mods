@@ -586,6 +586,14 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = modname .. ":slab_" .. subname .. " 1",
+	recipe = {
+		{modname .. ":slab_" .. subname .. "_quarter"},
+		{modname .. ":slab_" .. subname .. "_quarter"},
+	},
+})
+
+minetest.register_craft({
 	output = modname .. ":slab_" .. subname .. "_quarter 6",
 	recipe = {
 		{modname .. ":slab_" .. subname .. "_three_quarter"},
